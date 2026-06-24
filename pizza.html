@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Pie</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<header class="header">
+    <nav class="navbar">
+        <a href="#" style="text-decoration: none"><div class="logo">Pizza Pie</div></a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+           <li>
+    <button type="button" class="theme-btn" onclick="myFunction()" style="font-size: 24px;">
+        <i class="fa-regular fa-moon" id="theme-icon"></i>
+    </button>
+</li>
+        </ul>
+        
+    </nav>
+</header>
+
+<section class="hom reveal-left" id="home">
+
+    <div class="hom-content">
+        <h1>Pizza Taste</h1>
+
+        <h2>
+            The tasty pizza of <br>
+            your choice
+        </h2>
+
+        <button class="btn">View Menu</button>
+    </div>
+
+    <div class="hom-image">
+        <img src="images/pizza.jpg" alt="">
+    </div>
+
+</section>
+<section class="about reveal-right" id="about">
+
+    <div class="about-image">
+        <img src="images/about.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+
+        <span>About Us</span>
+
+        <h2>
+            We make good and <br>
+            tasty pizzas
+        </h2>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ut quo iure rem ducimus tenetur deserunt commodi doloribus.
+        </p>
+
+        <button class="btn">Learn More</button>
+
+    </div>
+
+</section>
+
+<!-- Menu -->
+
+<section class="menu reveal-scale" id="menu">
+
+    <span>Menu</span>
+
+    <h2>Tasty menu of the week</h2>
+
+    <div class="menu-container">
+
+        <div class="card">
+            <img src="images/3.jpg" alt="">
+            <h3>Cheese Pizza</h3>
+            <p>Tasty Food</p>
+            <span class="price">$30.05</span>
+        </div>
+
+        <div class="card">
+            <img src="images/pizza2.jpg" alt="">
+            <h3>Tropical Pizza</h3>
+            <p>Tasty Food</p>
+            <span class="price">$42.05</span>
+        </div>
+
+        <div class="card">
+            <img src="images/pizza3.jpg" alt="">
+            <h3>Mecaroni Pizza</h3>
+            <p>Tasty Food</p>
+            <span class="price">$12.05</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Services -->
+
+<section class="services reveal-left" id="service">
+
+    <span>Services</span>
+
+    <h2>We provide best food services</h2>
+
+    <div class="service-container">
+
+        <div class="service-box">
+            <img src="images/order.png" alt="">
+            <h3>You Order</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="images/shipping.png" alt="">
+            <h3>Shipping</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service-box">
+            <img src="images/delivery.png" alt="">
+            <h3>Delivered</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact-section reveal-right" id="contact">
+
+    <div class="contact-top">
+
+        <div class="contact-heading">
+            <span>Let's Talk</span>
+            <h2>Connect now</h2>
+        </div>
+
+        <button class="contact-btn">Contact Us</button>
+
+    </div>
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h3>Pizza Pie</h3>
+            <p>Connect With Us</p>
+
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>Menu Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#service">Service</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Terms Of Use</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+
+            <p><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+            <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            <p><i class="fas fa-envelope"></i> pizzapie@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Pizza Pie. All Rights Reserved.
+    </div>
+
+</section>
+
+<script>
+function myFunction(){
+
+    document.body.classList.toggle("dark-mode");
+
+    const icon = document.getElementById("theme-icon");
+
+    if(document.body.classList.contains("dark-mode")){
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    }else{
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }   
+}
+
+
+function revealSections() {
+
+    const sections = document.querySelectorAll(
+        '.reveal-left, .reveal-right, .reveal-scale'
+    );
+
+    sections.forEach(section => {
+
+        const windowHeight = window.innerHeight;
+        const sectionTop = section.getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if(sectionTop < windowHeight - revealPoint){
+            section.classList.add('active');
+        }
+    });
+
+}
+
+window.addEventListener('scroll', revealSections);
+
+revealSections();
+
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+
+            if(entry.isIntersecting){
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
+            }
+
+        });
+    },
+    {
+        threshold: 0.2
+    }
+);
+
+sections.forEach((section) => {
+    observer.observe(section);
+});
+</script>
+</body>
+</html>
